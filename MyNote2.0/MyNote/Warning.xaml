@@ -1,0 +1,23 @@
+﻿<Window x:Class="MyNote.Warning"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyNote"
+        mc:Ignorable="d"
+        Title="Warning" Height="300" Width="300" WindowStyle="None" Background="Transparent">
+
+    <Grid>
+        <Viewbox x:Name="warnShow" VerticalAlignment="Top" >
+            <StackPanel>
+                <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="Black" Width="278" Orientation="Horizontal" Height="22.583">
+                    <TextBlock Foreground="Yellow" HorizontalAlignment="Center" TextAlignment="Center" Width="279">提醒时间到啦！！！</TextBlock>
+                </StackPanel>
+                <ListBox x:Name="showWarning" Background="Yellow" Opacity="0.8">
+                    
+                </ListBox>
+                <Button x:Name="know"  VerticalAlignment="Bottom" Background="#FF8F9EE2" Foreground="#FF8D4D4D" FontWeight="Bold" FontFamily="Algerian" Click="know_Click">我知道啦！</Button>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Window>

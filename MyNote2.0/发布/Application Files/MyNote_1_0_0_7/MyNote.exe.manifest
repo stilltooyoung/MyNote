@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MyNote.exe" version="1.0.0.7" publicKeyToken="b972946378476d9f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MyNote" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MyNote.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+         若想要更改 Windows 用户帐户控制级别，请
+         将 requestedExecutionLevel 节点替换为下述某项。
+
+       <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+       <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+       <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        若想要使用文件和注册表虚拟化以实现向后
+        兼容，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5225168">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nCD7KthqdgsMauvZMByQCYkdAq4UcgqTkmwLU1uK0Js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\EntityFramework.resources.dll" size="327376">
+      <assemblyIdentity name="EntityFramework.resources" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="zh-Hans" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>77Lf9SNsB7gcglQqgFoIMdMPIuqVYOnoHj3PLvBca/0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="622288">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4OEmw7inupUB0D+Z1Upcu9F0vOy2FwCYq0zBIZ8n+TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\EntityFramework.SqlServer.resources.dll" size="19664">
+      <assemblyIdentity name="EntityFramework.SqlServer.resources" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="zh-Hans" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uuObmwGZpwEh8/JwQeZfouU3wjgA1ZgYGjDSH7A8zIA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Expression.Interactions.dll" size="108168">
+      <assemblyIdentity name="Microsoft.Expression.Interactions" version="4.5.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y81eimDXfRAHNSU4pChcYMDD77nHcQNViRBaKE5PY6k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.dll" size="104960">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QYteepb5phBcxv5FiWqRZOeciEn0C+I6QRtVY6jjoNA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.Shell.dll" size="542208">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack.Shell" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5vqdnjT/O/Y854JlSxTktUo6vRAiyHvAmQMsKUgVdnI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyNote.exe" size="90008">
+      <assemblyIdentity name="MyNote" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>29xkHeKjLS0cRUKK7edVtPamIKBQH1U58nUr+LNMr0Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="347648">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.107.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ip6XH2q4LE3/1vW7GzPx2Xm/tfnDO3yZjGRoGqfX87c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.EF6.dll" size="186880">
+      <assemblyIdentity name="System.Data.SQLite.EF6" version="1.0.107.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Z88U6Xqv694Jm9JbUbeNBvBtRPqSH+jXQMmNkZvW7UA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.Linq.dll" size="186880">
+      <assemblyIdentity name="System.Data.SQLite.Linq" version="1.0.107.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>thRRhj4djFcecuPuvKoV9romwvgvhsZSBQjOSAGgxoA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Windows.Interactivity.dll" size="55904">
+      <assemblyIdentity name="System.Windows.Interactivity" version="4.5.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>k/vFnkiAr8nxNsOsCXatp/P6p8rO3OXIJLM3y8qdLr8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="dream.png" size="98102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vXTcvafaV4mxIkh2BU0vJiDx3nuwDMGN/yY6nsD80Kc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="dreamico.ico" size="1150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z3wiZ9PlGKn77mTGG/uGfv+gvLm61ZC2lw/vD3UwX8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MyNote.exe.config" size="1953">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WYcCyEdfrqP76si1xTO3lbEmRWYv22xffzLUGaT+kKw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Today.png" size="7568">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o6gqqDkIGs1rLvQROIwUVKNPCWfnW8WpXZI90jzhA+g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\SQLite.Interop.dll" size="1548800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T6WBqKtLBl9BpWOUjsF0ln7oIvm7pzjb/piY75wUqfs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\SQLite.Interop.dll" size="1253376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bmAOX02VKrazb2K3jWaKebhMb4ssAdgFEeYai6nI2uw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SHR\su491" issuerKeyHash="b1d89897e9ed0a0e4d7828bc7d91c33824d14d0d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MQJC3V/YLTn+nPneykawF0KgonIi+AQsTQ6PpFf5deM=</DigestValue></Reference></SignedInfo><SignatureValue>GSYu6etiiKQsip5vwRJC+ZwXYSVkRwj9VrXs5eION4/BQabMRDBzU3eSU7uJHU3EZ4T84Xwils2k/9Ppxtgh7U05VIYb8obGW+lMxjPaGqNzmITkA1YqHa9wnGh7fZuDOKInav4UmcUk4/tymvJfslrHUBlseCAMi9wvaCL6ivw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pC+AtE4OteX4+LVYwlKOm/5mwVFks0y+6Vm8K2Xeyz85u85/OpXCFvAwUW7EdWwEyqwx9trOoqg6ETVqQ3iltteJf8A7i45yiO+n/Fmcs6APXwAkT5zz0z997S2Aox/4uieqq488MpB9Dz9G8T9+WujSZ2JWwWhNyUTUg4UazS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e375f957a48f0e4d2c04f82272a2a04217b046cadef99cfe392dd85fdd420231" Description="" Url=""><as:assemblyIdentity name="MyNote.exe" version="1.0.0.7" publicKeyToken="b972946378476d9f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SHR\su491</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WvounHbEdOfgf9Cccwvh+XiZ01pViwj9xlf9jqzpZiw=</DigestValue></Reference></SignedInfo><SignatureValue>dpqr+hVFk38BFYtcvuHpM2uri8EANdLKQYHkFLzx6rRNz6DNJqgtTRIA8xPRCPdtn34lvwyegcnaSzQNAO4PeExWO81JKZHvTcDKnPv9WV2Q6VKUa0zjGbdJcV0C4q5vw18cpBCMlewsZrZVEe/jSkMsfk9mkUFoasB/RLcRuK0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pC+AtE4OteX4+LVYwlKOm/5mwVFks0y+6Vm8K2Xeyz85u85/OpXCFvAwUW7EdWwEyqwx9trOoqg6ETVqQ3iltteJf8A7i45yiO+n/Fmcs6APXwAkT5zz0z997S2Aox/4uieqq488MpB9Dz9G8T9+WujSZ2JWwWhNyUTUg4UazS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQYTXOArUzw4hLufI24cs5kDANBgkqhkiG9w0BAQsFADAdMRswGQYDVQQDHhIAUwBIAFIAXABzAHUANAA5ADEwHhcNMTgwMTA0MDExMjMxWhcNMTkwMTA0MDcxMjMxWjAdMRswGQYDVQQDHhIAUwBIAFIAXABzAHUANAA5ADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKQvgLRODrXl+Pi1WMJSjpv+ZsFRZLNMvulZvCtl3ss/ObvOfzqVwhbwMFFuxHVsBMqsMfbazqKoOhE1akN4pbbXiX/AO4uOcojvp/xZnLOgD18AJE+c89M/fe0tgKMf+LonqquPPDKQfQ8/RvE/flro0mdiVsFoTclE1IOFGs0tAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAj1sy247xSNlf+SMbBFIU6bK4lBzg1CL3O0Xw1MGiSnTAutEwk3pIWxYhrBaZ9Flz1jdYNioCoJrKy/+b4crPrZnT4aezZqg57yCtJaE98hagkWWoJbnaOa3wMNqLwALhnJkFQ4v1Ja626XPtUeHtDAUoS5m1WckhwY/j+od7gtE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

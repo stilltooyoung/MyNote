@@ -1,0 +1,82 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyNote"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="MyNote.MainWindow"
+        mc:Ignorable="d" WindowStyle="None" AllowsTransparency="True"
+        Title="MainWindow" Height="350" Width="525" Background="Transparent">
+    <Grid x:Name="index">
+
+        <Viewbox VerticalAlignment="Top" >
+            <Grid  MouseEnter="showAttention_MouseEnter" MouseLeave="showAttention_MouseLeave">
+                <ListBox x:Name="showAttention" Background="Black" Opacity="0.8">
+
+                    <!--<ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="Black" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center">序号</TextBlock>
+                            <TextBlock Foreground="Green" Width="145" TextAlignment="Center">待办</TextBlock>
+                            <TextBlock Foreground="Green" Width="70" TextAlignment="Center">截止时间</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="49">K.O.</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>-->
+
+                    <!--<ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold" Height="13.583">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="White" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center" Text="1" FontSize="6.667"/>
+                            <TextBlock Foreground="Green" Width="139" TextAlignment="Center" FontSize="6.667">赶完代码</TextBlock>
+                            <TextBlock Foreground="Green" Width="73" TextAlignment="Center" FontSize="6.667">12/27/2016 0:0:0</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="41" FontSize="6.667">No</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold" Height="13.583">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="White" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center" Text="1" FontSize="6.667"/>
+                            <TextBlock Foreground="Green" Width="139" TextAlignment="Center" FontSize="6.667">赶完代码</TextBlock>
+                            <TextBlock Foreground="Green" Width="73" TextAlignment="Center" FontSize="6.667">12/27/2016 0:0:0</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="41" FontSize="6.667">No</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold"   >
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="White" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center" Text="1" FontSize="6.667"/>
+                            <TextBlock Foreground="Green" Width="139" TextAlignment="Center" FontSize="6.667">赶完代码</TextBlock>
+                            <TextBlock Foreground="Green" Width="73" TextAlignment="Center" FontSize="6.667">12/27/2016 0:0:0</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="41" FontSize="6.667">No</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold" Height="13.583">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="White" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center" Text="1" FontSize="6.667"/>
+                            <TextBlock Foreground="Green" Width="139" TextAlignment="Center" FontSize="6.667">赶完代码</TextBlock>
+                            <TextBlock Foreground="Green" Width="73" TextAlignment="Center" FontSize="6.667">12/27/2016 0:0:0</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="41" FontSize="6.667">No</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem 
+             FontFamily="Verdana" FontSize="12" FontWeight="Bold" Height="13.583">
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Background="White" Width="278" Orientation="Horizontal" Height="22.583">
+                            <TextBlock Foreground="Green" Width="25" TextAlignment="Center" Text="1" FontSize="6.667"/>
+                            <TextBlock Foreground="Green" Width="139" TextAlignment="Center" FontSize="6.667">赶完代码</TextBlock>
+                            <TextBlock Foreground="Green" Width="73" TextAlignment="Center" FontSize="6.667">12/27/2016 0:0:0</TextBlock>
+                            <TextBlock Foreground="Green" TextAlignment="Center" Width="41" FontSize="6.667">No</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>-->
+                </ListBox>
+            </Grid>
+        </Viewbox>
+
+        
+        <Image x:Name="dream"  Source="dream.png" HorizontalAlignment="Right" VerticalAlignment="Top" Width="66" Margin="0,10,10,0" MouseDown="dream_MouseDown" MouseEnter="dream_MouseEnter" MouseLeave="dream_MouseLeave">
+            <i:Interaction.Behaviors>
+                <ei:MouseDragElementBehavior/>
+            </i:Interaction.Behaviors>
+        </Image>
+    </Grid>
+</Window>
